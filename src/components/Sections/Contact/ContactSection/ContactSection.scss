@@ -1,0 +1,30 @@
+.contact-section {
+    padding-top: 62px;
+    min-height: 722px;
+    &__title {
+        font-family: var(--secondary-font);
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--font-color-fourth);
+        margin-bottom: 31px;
+    }
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 16px;
+    }
+    &__form {
+        display: block;
+        margin: 0 auto;
+        max-width: 460px;
+    }
+    &__button {
+        display: block;
+        margin: 0 auto;
+    }
+}

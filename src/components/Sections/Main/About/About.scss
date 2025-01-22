@@ -1,0 +1,36 @@
+.about {
+    max-width: 780px;
+    width: 100%;
+    margin: 0 auto;
+    &__title {
+        text-align: center;
+        color: var(--font-color-primary);
+        font-family: var();
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 43px;
+        letter-spacing: 0.01em;
+        margin-bottom: 16px;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 180%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: var(--font-color-primary);
+        margin-bottom: 52px;
+    }
+    &__line {
+        height: 1px;
+        width: 47px;
+        background-color: var(--font-color-secondary);
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+    &__button {
+        margin: 0 auto;
+        display: block;
+    }
+}

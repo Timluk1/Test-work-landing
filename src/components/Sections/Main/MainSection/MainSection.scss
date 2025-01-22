@@ -1,0 +1,17 @@
+.main-section {
+    width: 100%;
+    min-height: 670px;
+    background: linear-gradient(
+            180deg,
+            rgba(49, 29, 94, 0.85) 0%,
+            rgba(9, 5, 47, 0.85) 100%
+        ),
+        url("../../../../assets/first-background.png"), #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: stretch;
+    padding-top: 20px;
+    &__about {
+        margin-top: 158px;
+    }
+}

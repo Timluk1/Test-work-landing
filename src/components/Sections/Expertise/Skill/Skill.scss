@@ -1,0 +1,21 @@
+.skill {
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+    &__text {
+        text-align: center;
+        margin-top: 18px;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--font-color-fourth);
+        margin-top: 32px;
+        text-align: center;
+    }
+}
+

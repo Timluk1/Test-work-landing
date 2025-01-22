@@ -1,0 +1,31 @@
+.story-section {
+    display: flex;
+    gap: 101px;
+    padding: 70px 0px 100px 0px;
+
+    &__title {
+        font-family: var(--secondary-font);
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: var(--font-color-fourth);
+        margin-bottom: 11px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0.03em;
+        color: #413d4b;
+    }
+}

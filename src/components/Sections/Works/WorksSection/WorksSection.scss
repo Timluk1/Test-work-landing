@@ -1,0 +1,44 @@
+.work-section {
+    padding-top: 65px;
+    min-height: 734px;
+    &__items {
+        min-height: 400px;
+        background:
+            url("../../../../assets/fourth-background.png"), #ffffff;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-self: stretch;
+        margin-bottom: 69px;
+    }
+    &__btn {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+    &__button {
+        display: block;
+        margin: 0 auto;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        color: var(--font-color-fourth);
+    }
+    &__title {
+        font-family: var(--secondary-font);
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 120%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--font-color-fourth);
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 65px;
+    }
+}

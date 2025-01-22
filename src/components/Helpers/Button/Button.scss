@@ -1,0 +1,18 @@
+.button {
+    padding: 7px 13px;
+    color: var(--font-color-secondary);
+    border: 1px solid #00e0d0;
+    background-color: transparent;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #02a095;
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 224, 208, 0.4);
+        border-color: #00b8a8;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}

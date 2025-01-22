@@ -1,0 +1,47 @@
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 550px;
+    background: linear-gradient(
+            180deg,
+            rgba(49, 29, 94, 0.85) 0%,
+            rgba(9, 5, 47, 0.85) 100%
+        ),
+        url("../../../../assets/second-background.png"), #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: stretch;
+    &__text {
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 180%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--font-color-primary);
+    }
+    &__img {
+        user-select: none;
+        margin-bottom: 37px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__overlay {
+        padding: 70px;
+        position: relative;
+        background: rgba(49, 29, 94, 0.2);
+    }
+    &__close {
+        user-select: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.author {
+    transition: all 0.3s ease-in-out;
+    img {
+        transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+        width: 46px;
+        height: 46px;
+    }
+
+    &.active {
+        transform: scale(1.35);
+    }
+}
