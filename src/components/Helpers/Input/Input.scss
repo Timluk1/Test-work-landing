@@ -1,4 +1,10 @@
+.input-container {
+    width: 100%;
+    position: relative;
+}
+
 .input {
+    width: 100%;
     padding: 11px 19px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     font-weight: 300;
@@ -6,4 +12,39 @@
     line-height: 160%;
     letter-spacing: 0.05em;
     color: var(--font-color-fourth);
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 5px;
+    resize: none;
+    overflow: hidden;
+
+    &.input-error {
+        border-color: #ff4d4f;
+        box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+    }
+
+    &:focus {
+        border-color: var(--font-color-secondary);
+        box-shadow: 0 0 0 2px rgba(0, 224, 208, 0.3);
+        outline: none;
+    }
+
+    &.textarea {
+        font-family: var(--primary-font);
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        color: var(--font-color-fourth);
+    }
+}
+
+.input-error-message {
+    color: #ff4d4f;
+    font-size: 12px;
+    margin-top: 5px;
+    line-height: 1.2;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
 }

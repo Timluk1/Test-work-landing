@@ -16,7 +16,10 @@
         display: flex;
         flex-direction: column;
         gap: 24px;
-        margin-bottom: 16px;
+        margin-bottom: 40px;
+    }
+    &__message {
+        min-height: 200px;
     }
     &__form {
         display: block;
@@ -26,5 +29,12 @@
     &__button {
         display: block;
         margin: 0 auto;
+    }
+    &__error {
+        margin-bottom: 10px;
+    }
+    &__button {
+        width: 118px;
+        height: 40px
     }
 }

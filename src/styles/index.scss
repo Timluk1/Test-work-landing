@@ -3,11 +3,12 @@
     --font-color-secondary: #00e0d0;
     --font-color-third: #53c3bf;
     --font-color-fourth: #413d4b;
-    --font-color-five: #F9F9F9;
-    --font-color-six: #FAFAFA;
+    --font-color-five: #f9f9f9;
+    --font-color-six: #fafafa;
+    --font-color-error: #ff4d4f;
 
-    --primary-font: "Roboto";
-    --secondary-font: "Playfair Display";
+    --primary-font: "Roboto", sans-serif;
+    --secondary-font: "Playfair Display", serif;
 }
 
 #root,

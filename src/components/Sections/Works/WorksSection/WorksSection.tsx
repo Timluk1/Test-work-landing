@@ -10,15 +10,15 @@ export function WorksSection() {
                 <div className="work-section__content">
                     <h2 className="work-section__title">Our Works</h2>
                     <button className="work-section__btn">
-                        <p className="work-section__text">See All Projects on Dribbble</p>
+                        <p className="work-section__text">
+                            See All Projects on Dribbble
+                        </p>
                         <img src={Arrow} alt="Arrow icon pointing right" />
                     </button>
                 </div>
             </Container>
             <div className="work-section__items"></div>
-            <Button className="work-section__button">
-                Load More
-            </Button>
+            <Button className="work-section__button">Load More</Button>
         </section>
     );
 }

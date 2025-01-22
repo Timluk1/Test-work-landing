@@ -1,9 +1,11 @@
 .reviews-section {
     padding-top: 40px;
     min-height: 500px;
-    background: linear-gradient(180deg,
+    background: linear-gradient(
+            180deg,
             rgba(49, 29, 94, 0.85) 0%,
-            rgba(9, 5, 47, 0.85) 100%),
+            rgba(9, 5, 47, 0.85) 100%
+        ),
         url("../../../../assets/second-background.png"), #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,7 +61,7 @@
         margin-bottom: 39px;
     }
     &__list {
-        display: flex; 
+        display: flex;
         gap: 16px;
         &-item {
             display: flex;

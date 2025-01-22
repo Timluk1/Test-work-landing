@@ -21,13 +21,13 @@ export function ReviewsSection() {
                 <div className="reviews-section__placeholder">
                     <div className="reviews-section__content">
                         <p className="reviews-section__quote">“</p>
-                        <p className="reviews-section__text">
-                            {active?.text}
-                        </p>
+                        <p className="reviews-section__text">{active?.text}</p>
                     </div>
                     {active && (
                         <div className="reviews-section__author">
-                            <h3 className="reviews-section__author-name">{active.name}</h3>
+                            <h3 className="reviews-section__author-name">
+                                {active.name}
+                            </h3>
                             <p className="reviews-section__job">{active.job}</p>
                             <ul className="reviews-section__list">
                                 {reviewsList.map((data) => {
@@ -37,7 +37,10 @@ export function ReviewsSection() {
                                         onChangeReview,
                                     };
                                     return (
-                                        <li className="reviews-section__list-item" key={data.name + data.job}>
+                                        <li
+                                            className="reviews-section__list-item"
+                                            key={data.name + data.job}
+                                        >
                                             <Author {...props} />
                                         </li>
                                     );

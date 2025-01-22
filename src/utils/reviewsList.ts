@@ -1,8 +1,8 @@
-import John from "assets/John.png"
-import Alice from "assets/Alice.png"
-import Sophie from "assets/Sophie.png"
-import Emily from "assets/Emily.png"
-import Liam from "assets/Liam.png"
+import John from "assets/John.png";
+import Alice from "assets/Alice.png";
+import Sophie from "assets/Sophie.png";
+import Emily from "assets/Emily.png";
+import Liam from "assets/Liam.png";
 
 export const reviewsList = [
     {
@@ -34,5 +34,5 @@ export const reviewsList = [
         job: "Creative Director",
         text: "Liam’s creative vision and design expertise elevate our projects. He pushes the boundaries of design, ensuring that each product is not only functional but also visually stunning.",
         imgSrc: Liam,
-    }
+    },
 ];

@@ -3,11 +3,19 @@ import classNames from "classnames";
 import "./Container.scss";
 
 interface IContainerProps {
-    as?: ElementType; 
+    as?: ElementType;
     children: ReactNode;
-    className?: string; 
+    className?: string;
 }
 
-export function Container({ as: Component = "div", children, className }: IContainerProps) {
-    return <Component className={classNames("container", className)}>{children}</Component>;
+export function Container({
+    as: Component = "div",
+    children,
+    className,
+}: IContainerProps) {
+    return (
+        <Component className={classNames("container", className)}>
+            {children}
+        </Component>
+    );
 }

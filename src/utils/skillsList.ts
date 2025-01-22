@@ -1,9 +1,9 @@
-import Web from "assets/web.svg"
-import Paint from "assets/paint.svg"
-import Mobile from "assets/mobile.svg"
-import Optimization from "assets/optimization.svg"
-import Game from "assets/game.svg"
-import Love from "assets/love.svg"
+import Web from "assets/web.svg";
+import Paint from "assets/paint.svg";
+import Mobile from "assets/mobile.svg";
+import Optimization from "assets/optimization.svg";
+import Game from "assets/game.svg";
+import Love from "assets/love.svg";
 
 export const skills = [
     {

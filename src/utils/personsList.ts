@@ -1,18 +1,18 @@
 export const personsList = [
     {
         name: "Semf ucuk",
-        job: "CEO & FOUNDER"
+        job: "CEO & FOUNDER",
     },
     {
         name: "DIK ADALIN",
-        job: "ENGINEERING"
+        job: "ENGINEERING",
     },
     {
         name: "JENG KOL",
-        job: "DESIGNER"
-    }, 
+        job: "DESIGNER",
+    },
     {
         name: "PET ROMAK",
-        job: "MARKETING"
-    }
-]
+        job: "MARKETING",
+    },
+];

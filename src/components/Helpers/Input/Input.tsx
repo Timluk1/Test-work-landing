@@ -1,17 +1,37 @@
-import classNames from "classnames"
-import { InputHTMLAttributes } from "react";
-import "./Input.scss"
+import classNames from "classnames";
+import { InputProps } from "./types";
+import "./Input.scss";
 
-interface InputProps {
-    placeholder: string;
-    value?: string;
-    onChange?: () => void;
-    className?: string;
-    type?: InputHTMLAttributes<HTMLInputElement>["type"]
-}
-
-export function Input({ className, placeholder, type="text" }: InputProps) {
+export function Input({
+    className,
+    placeholder,
+    type = "text",
+    register,
+    name,
+    error,
+}: InputProps) {
     return (
-        <input className={classNames("input", className)} type={type} placeholder={placeholder}/>
-    )
+        <div className="input-container">
+            {type === "textarea"
+                ?
+                <textarea className={classNames("input textarea", className, {
+                    "input-error": error,
+                })}
+                    placeholder={placeholder}
+                    {...register(name)}></textarea>
+                :
+                <input
+                    className={classNames("input", className, {
+                        "input-error": error,
+                    })}
+                    type={type}
+                    placeholder={placeholder}
+                    {...register(name)}
+                />
+            }
+            {error && (
+                <span className="input-error-message">{error.message}</span>
+            )}
+        </div>
+    );
 }

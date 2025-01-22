@@ -1,9 +1,11 @@
 .team-section {
     padding-top: 62px;
     min-height: 712px;
-    background: linear-gradient(180deg,
+    background: linear-gradient(
+            180deg,
             rgba(49, 29, 94, 0.85) 0%,
-            rgba(9, 5, 47, 0.85) 100%),
+            rgba(9, 5, 47, 0.85) 100%
+        ),
         url("../../../../assets/third-background.png"), #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +25,6 @@
 
     &__text {
         font-family: var(--secondary-font);
-        ;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -52,7 +53,7 @@
     }
 
     &__content {
-        margin-bottom: 64px;        
+        margin-bottom: 64px;
     }
     &__item {
         cursor: pointer;

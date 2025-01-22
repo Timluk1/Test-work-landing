@@ -14,7 +14,7 @@
     &__line {
         width: 48px;
         border: 1px solid rgba(65, 61, 75, 0.3);
-        margin: 0 auto
+        margin: 0 auto;
     }
     &__text {
         text-align: center;
@@ -24,7 +24,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         row-gap: 74px;
-        column-gap: 24px; 
+        column-gap: 24px;
     }
     &__content {
         margin-bottom: 81px;

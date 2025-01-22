@@ -1,4 +1,4 @@
-import "./Skill.scss"
+import "./Skill.scss";
 
 interface ISkillProps {
     title: string;
