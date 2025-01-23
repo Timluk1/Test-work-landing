@@ -1,5 +1,5 @@
 import Geo from "assets/geo.svg";
-import Phone from "assets/phone.svg"
+import Phone from "assets/phone.svg";
 import "./Studio.scss";
 
 export function Studio() {
@@ -10,8 +10,8 @@ export function Studio() {
                 <div className="studio__content studio__content-first">
                     <img src={Geo} alt="geo" />
                     <p className="studio__text">
-                        Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres
-                        - Jakarta Barat 11480 - Indonesia
+                        Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13,
+                        Kalideres - Jakarta Barat 11480 - Indonesia
                     </p>
                 </div>
                 <div className="studio__content">
