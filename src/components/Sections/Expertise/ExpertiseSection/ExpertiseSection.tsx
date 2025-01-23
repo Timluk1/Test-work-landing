@@ -9,6 +9,7 @@ export function ExpertiseSection() {
             <Container>
                 <div className="expertise-section__content">
                     <h2 className="expertise-section__title">expertise</h2>
+                    <script>console.log("heelo worl")</script>
                     <p className="expertise-section__text">
                         Lorem ipsum dolor sit amet proin gravida nibh vel velit
                     </p>

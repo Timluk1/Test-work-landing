@@ -7,10 +7,17 @@ export const FormSchema = z.object({
 
     phone: z
         .string({ required_error: "Телефон обязателен для заполнения" })
-        .refine((value) => {
-            const digitsOnly = value.replace(/[\s()+-]/g, "");
-            return digitsOnly.length >= 11 && digitsOnly.length <= 15 && digitsOnly.split("").every((char) => !isNaN(Number(char)));
-        }, { message: "Некорректный формат телефона" }),
+        .refine(
+            (value) => {
+                const digitsOnly = value.replace(/[\s()+-]/g, "");
+                return (
+                    digitsOnly.length >= 11 &&
+                    digitsOnly.length <= 15 &&
+                    digitsOnly.split("").every((char) => !isNaN(Number(char)))
+                );
+            },
+            { message: "Некорректный формат телефона" },
+        ),
 
     subject: z
         .string({ required_error: "Тема обязательна для заполнения" })
@@ -18,7 +25,9 @@ export const FormSchema = z.object({
 
     message: z
         .string({ required_error: "Сообщение обязательно для заполнения" })
-        .min(10, { message: "Сообщение должно содержать не менее 10 символов" }),
+        .min(10, {
+            message: "Сообщение должно содержать не менее 10 символов",
+        }),
 
     email: z
         .string({ required_error: "Email обязателен для заполнения" })

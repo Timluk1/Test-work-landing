@@ -1,0 +1,64 @@
+.footer-section {
+    padding: 64px 0px;
+    min-height: 394px;
+    background: linear-gradient(180deg,
+            rgba(49, 29, 94, 0.85) 0%,
+            rgba(9, 5, 47, 0.85) 100%),
+        url("../../../../assets/five-background.png"), #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: stretch;
+
+    &__description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: -0.04em;
+        color: var(--font-color-primary);
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        min-height: 175px;
+        margin-bottom: 91px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 284px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__copyright {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: -0.03em;
+        color: var(--font-color-primary);
+    }
+
+    &__nav {
+        display: flex;
+        gap: 36px;
+
+        &-link {
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: var(--font-color-primary);
+            transition: color 0.2s ease-in-out;
+
+            &:hover {
+                color: var(--font-color-secondary)
+            }
+        }
+    }
+}

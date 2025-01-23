@@ -1,37 +1,30 @@
 import classNames from "classnames";
-import { InputProps } from "./types";
 import "./Input.scss";
 
+interface InputProps {
+    value?: string;
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    placeholder: string;
+    type?: string;
+    className?: string;
+}
+
 export function Input({
-    className,
+    value,
+    onChange,
     placeholder,
     type = "text",
-    register,
-    name,
-    error,
+    className,
 }: InputProps) {
     return (
         <div className="input-container">
-            {type === "textarea"
-                ?
-                <textarea className={classNames("input textarea", className, {
-                    "input-error": error,
-                })}
-                    placeholder={placeholder}
-                    {...register(name)}></textarea>
-                :
-                <input
-                    className={classNames("input", className, {
-                        "input-error": error,
-                    })}
-                    type={type}
-                    placeholder={placeholder}
-                    {...register(name)}
-                />
-            }
-            {error && (
-                <span className="input-error-message">{error.message}</span>
-            )}
+            <input
+                className={classNames("input", className)}
+                type={type}
+                value={value}
+                onChange={onChange}
+                placeholder={placeholder}
+            />
         </div>
     );
 }

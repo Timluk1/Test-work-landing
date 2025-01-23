@@ -1,15 +1,10 @@
-import Logo from "assets/logo.svg";
+import { Logo } from "components/Helpers/Logo";
 import "./Header.scss";
 
 export function Header() {
     return (
         <header className="header">
-            <a href="#">
-                <div className="header__about">
-                    <img className="header__logo" src={Logo} alt="Logo" />
-                    <p className="header__company">tajam</p>
-                </div>
-            </a>
+            <Logo />
             <nav className="header__nav">
                 <a className="header__link active" href="#about">
                     home

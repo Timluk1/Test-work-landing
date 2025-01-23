@@ -1,0 +1,49 @@
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        color: var(--font-color-primary);
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__input {
+        height: 100%;
+    }
+
+    &__list {
+        display: flex;
+        gap: 8px;
+        img {
+            width: 19px;
+            height: 19px;
+        }
+        &-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            border: 1px solid #FFFFFF;
+            border-radius: 100%;
+        }
+    }
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 10px;
+
+    &__button {
+        background: rgba(255, 255, 255, 0.5);
+        padding: 9px 23px;
+    }
+}

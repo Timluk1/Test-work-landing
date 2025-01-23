@@ -1,0 +1,31 @@
+.studio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 284px;
+    &__content {
+        display: flex;
+        gap: 14px;
+        &-first {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: -0.04em;
+        color: var(--font-color-primary);
+
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: -0.04em;
+        color: var(--font-color-primary);
+    }
+}

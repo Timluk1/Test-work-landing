@@ -6,6 +6,7 @@ import { TeamSection } from "components/Sections/Team/TeamSection";
 import { WorksSection } from "components/Sections/Works/WorksSection/WorksSection";
 import { ReviewsSection } from "components/Sections/Revies/ReviewsSection";
 import { ContactSection } from "components/Sections/Contact/ContactSection";
+import { FooterSection } from "components/Sections/Footer/FooterSection";
 import "./Home.scss";
 
 export function Home() {
@@ -19,6 +20,7 @@ export function Home() {
             <WorksSection />
             <ReviewsSection />
             <ContactSection />
+            <FooterSection />
         </div>
     );
 }

@@ -9,7 +9,7 @@ export interface FormData {
     message: string;
 }
 
-export interface InputProps {
+export interface InputPropsForm {
     placeholder: string;
     name: keyof FormData;
     register: UseFormRegister<FormData>;
