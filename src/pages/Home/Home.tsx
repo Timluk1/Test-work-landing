@@ -7,11 +7,13 @@ import { WorksSection } from "components/Sections/Works/WorksSection/WorksSectio
 import { ReviewsSection } from "components/Sections/Revies/ReviewsSection";
 import { ContactSection } from "components/Sections/Contact/ContactSection";
 import { FooterSection } from "components/Sections/Footer/FooterSection";
+import { Menu } from "components/Helpers/Menu";
 import "./Home.scss";
 
 export function Home() {
     return (
         <div className="home">
+            <Menu />
             <MainSection />
             <StorySection />
             <VideoSection />

@@ -23,7 +23,9 @@ export function Subscribe() {
             </div>
             <ul className="subscribe__list">
                 <li className="subscribe__list-item">
-                    <img src={Facebook} alt="facebook" />
+                    <a href="">
+                        <img src={Facebook} alt="facebook" />
+                    </a>
                 </li>
                 <li className="subscribe__list-item">
                     <a href="">

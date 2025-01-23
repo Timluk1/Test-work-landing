@@ -9,11 +9,13 @@
         letter-spacing: 0.025em;
         text-transform: uppercase;
         color: var(--font-color-primary);
+        margin-bottom: 20px;
     }
 
     &__content {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 20px;
     }
 
     &__input {
@@ -22,6 +24,7 @@
 
     &__list {
         display: flex;
+        justify-content: center;
         gap: 8px;
         img {
             width: 19px;
@@ -34,6 +37,10 @@
             padding: 8px;
             border: 1px solid #ffffff;
             border-radius: 100%;
+            transition: all ease-in-out 0.3s;
+            &:hover {
+                scale: 1.2;
+            }
         }
     }
 }
@@ -45,5 +52,9 @@
     &__button {
         background: rgba(255, 255, 255, 0.5);
         padding: 9px 23px;
+        transition: all ease-in-out 0.3s;
+        &:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
     }
 }

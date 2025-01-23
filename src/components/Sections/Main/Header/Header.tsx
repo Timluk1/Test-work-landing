@@ -1,10 +1,14 @@
 import { Logo } from "components/Helpers/Logo";
+import Menu from "assets/menu.svg";
 import "./Header.scss";
 
 export function Header() {
     return (
         <header className="header">
             <Logo />
+            <button>
+                <img className="header__menu" src={Menu} alt="" />
+            </button>
             <nav className="header__nav">
                 <a className="header__link active" href="#about">
                     home

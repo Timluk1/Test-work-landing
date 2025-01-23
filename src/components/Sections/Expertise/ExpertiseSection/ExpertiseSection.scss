@@ -1,5 +1,6 @@
 .expertise-section {
     padding: 62px 0px 95px 0px;
+
     &__title {
         font-family: var(--secondary-font);
         font-weight: 700;
@@ -11,22 +12,49 @@
         text-align: center;
         margin-bottom: 10px;
     }
+
     &__line {
         width: 48px;
         border: 1px solid rgba(65, 61, 75, 0.3);
         margin: 0 auto;
     }
+
     &__text {
         text-align: center;
         margin-bottom: 18px;
     }
+
     &__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         row-gap: 74px;
         column-gap: 24px;
     }
+
     &__content {
         margin-bottom: 81px;
+    }
+}
+
+@media (max-width: 979px) {
+    .expertise-section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    .expertise-section {
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .expertise-section {
+        &__list {
+            grid-template-columns: 1fr;
+        }
     }
 }

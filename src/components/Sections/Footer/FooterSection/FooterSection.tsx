@@ -6,7 +6,7 @@ import "./FooterSection.scss";
 
 export function FooterSection() {
     return (
-        <section className="footer-section">
+        <footer className="footer-section">
             <Container className="footer-section__container">
                 <div className="footer-section__content">
                     <div className="footer-section__info">
@@ -38,6 +38,6 @@ export function FooterSection() {
                     </p>
                 </div>
             </Container>
-        </section>
+        </footer>
     );
 }

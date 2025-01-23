@@ -29,3 +29,14 @@
         color: #413d4b;
     }
 }
+
+@media (max-width: 979px) {
+    .story-section {
+        display: block;
+        padding-left: 40px;
+        padding-right: 40px;
+        &__img {
+            display: none;
+        }
+    }
+}

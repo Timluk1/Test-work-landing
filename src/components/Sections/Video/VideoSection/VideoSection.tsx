@@ -18,6 +18,7 @@ export function VideoSection() {
                             <img src={Close} alt="close-video" />
                         </button>
                         <iframe
+                            className="video-section__iframe"
                             width="720"
                             height="405"
                             src="https://rutube.ru/play/embed/f884aa6ed5f94120b7304506042fe5bb/"

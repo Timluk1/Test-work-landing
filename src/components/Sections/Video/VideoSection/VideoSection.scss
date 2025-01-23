@@ -45,3 +45,23 @@
         }
     }
 }
+
+@media (max-width: 979px) {
+    .video-section {
+        padding-left: 40px;
+        padding-right: 40px;
+        &__iframe {
+            width: auto;
+            height: auto;
+        }
+        &__overlay {
+            padding: 50px;
+        }
+        &__close {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
