@@ -1,6 +1,4 @@
 .story-section {
-    display: flex;
-    gap: 101px;
     padding: 70px 0px 100px 0px;
 
     &__title {
@@ -28,10 +26,18 @@
         letter-spacing: 0.03em;
         color: #413d4b;
     }
+    &__content {
+        display: flex;
+        gap: 101px;
+    }
 }
 
 @media (max-width: 979px) {
     .story-section {
+        &__content {
+            display: flex;
+            gap: 0px;
+        }
         display: block;
         padding-left: 40px;
         padding-right: 40px;

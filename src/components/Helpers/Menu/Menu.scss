@@ -1,22 +1,41 @@
 .menu {
     width: 100%;
     position: relative;
+
     &__header {
         display: flex;
         justify-content: end;
     }
+
     &__list {
+        padding: 20px;
+        margin: 0;
+
         &-item {
+            margin: 15px 0;
             display: flex;
             justify-content: center;
+
+            a {
+                color: var(--font-color-primary);
+                text-decoration: none;
+                font-size: 1.2rem;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: var(--font-color-secondary);
+                }
+            }
         }
     }
+
     &__button {
         transition: all 0.3s ease;
+
         img {
             width: 35px;
             height: 35px;
-        }   
+        }
     }
 
     .menu-btn {
@@ -36,7 +55,7 @@
             display: block;
             width: 30px;
             height: 4px;
-            background: #fff;
+            background: var(--font-color-primary);
             border-radius: 2px;
             transition:
                 transform 0.3s ease,
@@ -44,7 +63,7 @@
         }
 
         &:hover span {
-            background: #00bfa5;
+            background: var(--font-color-secondary);
         }
     }
 
@@ -58,27 +77,6 @@
         box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
         transition: all 0.3s ease;
         z-index: 100;
-
-        ul {
-            list-style: none;
-            padding: 20px;
-            margin: 0;
-
-            li {
-                margin: 15px 0;
-
-                a {
-                    color: #fff;
-                    text-decoration: none;
-                    font-size: 1.2rem;
-                    transition: color 0.3s ease;
-
-                    &:hover {
-                        color: #00bfa5;
-                    }
-                }
-            }
-        }
 
         &.open {
             right: 0;

@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { MenuContext } from "context";
+import { sections } from "utils/sections";
 import classNames from "classnames";
 import Close from "assets/close.svg"
 import "./Menu.scss";
@@ -7,8 +8,13 @@ import "./Menu.scss";
 export function Menu() {
     const { isOpen, setIsOpen } = useContext(MenuContext);
     const toogle = () => {
-        setIsOpen((value)  => !value);
+        setIsOpen((value) => !value);
     }
+    const onClickLink = (selector: string, event: React.MouseEvent<HTMLAnchorElement>) => {
+        setIsOpen(false);
+        event.preventDefault();
+        document.querySelector(selector)?.scrollIntoView({ behavior: "smooth" });
+    };
     return (
         <div className="menu">
             <nav className={classNames("side-menu", isOpen && "open")}>
@@ -18,18 +24,18 @@ export function Menu() {
                     </button>
                 </div>
                 <ul className="menu__list">
-                    <li className="menu__list-item">
-                        <a href="#home">Home</a>
-                    </li>
-                    <li className="menu__list-item">
-                        <a href="#about">About</a>
-                    </li>
-                    <li className="menu__list-item">
-                        <a href="#services">Services</a>
-                    </li>
-                    <li className="menu__list-item">
-                        <a href="#contact">Contact</a>
-                    </li>
+                    {sections.map((value) => (
+                        <li className="menu__list-item" key={value.text}>
+                            <a
+                                className="header__link"
+                                href="#"
+                                onClick={(event) => onClickLink(value.selector, event)}
+                            >
+                                {value.text}
+                            </a>
+                        </li>
+
+                    ))}
                 </ul>
 
             </nav>
