@@ -9,8 +9,6 @@
         "build": "tsc -b && vite build",
         "format": "prettier --write .",
         "lint": "eslint .",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist",
         "preview": "vite preview"
     },
     "dependencies": {
