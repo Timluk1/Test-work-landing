@@ -18,9 +18,6 @@ jobs:
         with:
           node-version: 18
 
-      - name: Format
-        run: npm run format
-
       - name: Install dependencies
         run: npm install
 
