@@ -29,7 +29,8 @@
             "components/*": ["components/*"],
             "utils/*": ["utils/*"],
             "api/*": ["api/*"],
-            "models/*": ["models/*"]
+            "models/*": ["models/*"],
+            "context/*": ["context/*"]
         }
     },
     "include": ["src"]

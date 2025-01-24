@@ -1,12 +1,18 @@
 import { Logo } from "components/Helpers/Logo";
+import { useContext } from "react";
+import { MenuContext } from "context";
 import Menu from "assets/menu.svg";
 import "./Header.scss";
 
 export function Header() {
+    const { setIsOpen } = useContext(MenuContext);
+    const toogle = () => {
+        setIsOpen((value) => !value);
+    }
     return (
         <header className="header">
             <Logo />
-            <button>
+            <button onClick={toogle}>
                 <img className="header__menu" src={Menu} alt="" />
             </button>
             <nav className="header__nav">

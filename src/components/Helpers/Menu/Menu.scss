@@ -1,5 +1,23 @@
 .menu {
+    width: 100%;
     position: relative;
+    &__header {
+        display: flex;
+        justify-content: end;
+    }
+    &__list {
+        &-item {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__button {
+        transition: all 0.3s ease;
+        img {
+            width: 35px;
+            height: 35px;
+        }   
+    }
 
     .menu-btn {
         position: absolute;
@@ -31,14 +49,14 @@
     }
 
     .side-menu {
+        padding: 40px;
         position: fixed;
         top: 0;
         right: -100%;
-        width: 250px;
         height: 100%;
         background: #333;
         box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
-        transition: right 0.3s ease;
+        transition: all 0.3s ease;
         z-index: 100;
 
         ul {
